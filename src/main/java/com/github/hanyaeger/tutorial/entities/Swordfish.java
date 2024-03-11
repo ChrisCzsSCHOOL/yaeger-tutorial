@@ -15,7 +15,7 @@ public class Swordfish
         implements SceneBorderCrossingWatcher, Collider, Collided {
     public Swordfish(Coordinate2D location) {
         super("sprites/swordfish.png", location);
-        setMotion(2, 270d);
+        setMotion(10, 270d);
     }
 
 

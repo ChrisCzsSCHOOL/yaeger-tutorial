@@ -26,6 +26,7 @@ public class QuitButton
 
     @Override
     public void onMouseButtonPressed(MouseButton mouseButton, Coordinate2D coordinate2D) {
+
         app.quit();
     }
 
