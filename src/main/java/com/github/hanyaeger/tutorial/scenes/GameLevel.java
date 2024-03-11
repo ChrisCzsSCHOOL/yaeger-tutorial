@@ -15,7 +15,8 @@ import javafx.scene.text.FontWeight;
 
 import java.nio.channels.spi.AbstractInterruptibleChannel;
 
-public class GameLevel extends DynamicScene {
+public class GameLevel
+        extends DynamicScene {
     private Empty empty;
 
     public GameLevel(Empty empty) {
