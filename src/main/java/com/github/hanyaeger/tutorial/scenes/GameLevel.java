@@ -36,17 +36,19 @@ public class GameLevel extends DynamicScene {
         );
         addEntity(swordFish);
 
+        // add health
+        var health = new HealthText(
+                new Coordinate2D(getWidth() / 2 - 50, 20)
+        );
+        addEntity(health);
+
         // add hanny
         var hanny = new Hanny(
-                new Coordinate2D(0,0), new HealthText(new Coordinate2D(0, getWidth() / 2)),
+                new Coordinate2D(0,0), health,
                 empty
         );
         addEntity(hanny);
 
-        // add health
-        var health = new HealthText(
-                new Coordinate2D(getWidth() / 2, 20)
-        );
-        addEntity(health);
+
     }
 }

@@ -12,33 +12,33 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 
-public class PlayAgainButton
+public class QuitButton
         extends TextEntity
         implements MouseButtonPressedListener, MouseEnterListener, MouseExitListener {
     private Empty empty;
 
-    public PlayAgainButton(Coordinate2D initialLocation, Empty empty) {
-        super(initialLocation, "Play Again");
-        setFill(Color.PURPLE);
-        setFont(Font.font("Play Again", FontWeight.BOLD, 30));
+    public QuitButton(Coordinate2D initialLocation, Empty empty) {
+        super(initialLocation, "QUIT");
+        setFill(Color.RED);
+        setFont(Font.font("QUIT", FontWeight.BOLD, 30));
         this.empty = empty;
     }
 
     @Override
     public void onMouseButtonPressed(MouseButton mouseButton, Coordinate2D coordinate2D) {
-        empty.setActiveScene(1);
+        empty.quit();
     }
 
     @Override
     public void onMouseEntered() {
-        setFill(Color.VIOLET);
+        setFill(Color.DARKRED);
         setCursor(Cursor.HAND);
         System.out.println("Muis geinitieerd");
     }
 
     @Override
     public void onMouseExited(){
-        setFill(Color.PURPLE);
+        setFill(Color.RED);
         setCursor(Cursor.HAND);
         System.out.println("Muis geinitieerd");
     }

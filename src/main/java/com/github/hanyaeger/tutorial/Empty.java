@@ -21,7 +21,5 @@ public class Empty extends YaegerGame {
         addScene(0, new TitleScene(this));
         addScene(1, new GameLevel(this));
         addScene(2, new GameOver(this));
-
-
     }
 }

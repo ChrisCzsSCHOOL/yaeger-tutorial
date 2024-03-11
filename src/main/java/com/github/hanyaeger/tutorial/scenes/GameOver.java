@@ -6,6 +6,7 @@ import com.github.hanyaeger.api.entities.impl.TextEntity;
 import com.github.hanyaeger.api.scenes.StaticScene;
 import com.github.hanyaeger.tutorial.Empty;
 import com.github.hanyaeger.tutorial.entities.buttons.PlayAgainButton;
+import com.github.hanyaeger.tutorial.entities.buttons.QuitButton;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
@@ -34,8 +35,13 @@ public class GameOver extends StaticScene {
         addEntity(gameOverText);
 
         var playAgainButton = new PlayAgainButton(
-                new Coordinate2D(getWidth() / 2, getHeight() / 2), empty
+                new Coordinate2D(getWidth() / 2 - 75, getHeight() / 2), empty
         );
         addEntity(playAgainButton);
+
+        var quitButton = new QuitButton(
+                new Coordinate2D(getWidth() / 2 - 75, getHeight() / 2 + 50), empty
+        );
+        addEntity(quitButton);
     }
 }
