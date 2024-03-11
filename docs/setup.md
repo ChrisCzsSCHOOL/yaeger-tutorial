@@ -6,7 +6,7 @@ Let's first create the entry-point, the class that contains the `main`-method.
 package `com.github.hanyaeger.tutorial`.
 
 ![Edit](images/edit.png)  Let `Waterworld` extend the class `YaegerGame` and
-implement the required methods. Leave them empty for now.
+implement the required methods. Leave them app for now.
 
 ![Edit](images/edit.png) Add a `main`-method that calls the static
 method `launch()` from the class `YaegerGame`. Pass the arguments from

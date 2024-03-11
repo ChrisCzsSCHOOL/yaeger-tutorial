@@ -4,7 +4,7 @@ import com.github.hanyaeger.api.AnchorPoint;
 import com.github.hanyaeger.api.Coordinate2D;
 import com.github.hanyaeger.api.entities.impl.TextEntity;
 import com.github.hanyaeger.api.scenes.StaticScene;
-import com.github.hanyaeger.tutorial.Empty;
+import com.github.hanyaeger.tutorial.App;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
@@ -12,10 +12,10 @@ import com.github.hanyaeger.tutorial.entities.buttons.StartButton;
 
 public class TitleScene extends StaticScene {
 
-    private Empty empty;
+    private App app;
 
-    public TitleScene(Empty empty) {
-        this.empty = empty;
+    public TitleScene(App app) {
+        this.app = app;
     }
 
     @Override
@@ -33,7 +33,7 @@ public class TitleScene extends StaticScene {
         waterwoldText.setFont(Font.font("Roboto", FontWeight.SEMI_BOLD, 80));
         addEntity(waterwoldText);
 
-        var StartButton = new StartButton(new Coordinate2D(300, 500), empty);
+        var StartButton = new StartButton(new Coordinate2D(300, 500), app);
         addEntity(StartButton);
     }
 }

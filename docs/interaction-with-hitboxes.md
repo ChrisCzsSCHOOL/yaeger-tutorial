@@ -13,7 +13,7 @@ a `DynamicCompositeEntity`.
 ![Edit](images/edit.png) Create a package
 `com.github.hanyaeger.tutorial.entities.swordfish`. In this package create a
 class `SwordFish` that extends `DynamicCompositeEntity`. Implement the methods,
-but leave them empty for now. Delete the previous implementation of the
+but leave them app for now. Delete the previous implementation of the
 swordfish and replace all usages with the new one.
 
 ## Another `setupEntities()`?

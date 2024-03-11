@@ -9,7 +9,7 @@ import com.github.hanyaeger.api.entities.SceneBorderCrossingWatcher;
 import com.github.hanyaeger.api.entities.impl.DynamicSpriteEntity;
 import com.github.hanyaeger.api.scenes.SceneBorder;
 import com.github.hanyaeger.api.userinput.KeyListener;
-import com.github.hanyaeger.tutorial.Empty;
+import com.github.hanyaeger.tutorial.App;
 import com.github.hanyaeger.tutorial.entities.text.HealthText;
 import javafx.scene.input.KeyCode;
 
@@ -20,11 +20,11 @@ import java.util.Set;
 public class Hanny
         extends DynamicSpriteEntity
         implements KeyListener, SceneBorderCrossingWatcher, Newtonian, Collided, Collider {
-    private Empty empty;
+    private App app;
     private HealthText healthText;
     private int health = 1;
 
-    public Hanny(Coordinate2D location, HealthText healthText, Empty empty) {
+    public Hanny(Coordinate2D location, HealthText healthText, App app) {
         super("sprites/hanny.png", location, new Size(20,40), 1, 2);
 
         this.healthText = healthText;
@@ -33,7 +33,7 @@ public class Hanny
         setGravityConstant(0.005);
         setFrictionConstant(0.04);
 
-        this.empty = empty;
+        this.app = app;
     }
     @Override
     public void onPressedKeysChange(Set<KeyCode> set) {
@@ -85,7 +85,7 @@ public class Hanny
         health--;
         healthText.setHealthText(health);
         if (health == 0 ){
-            empty.setActiveScene(2);
+            app.setActiveScene(2);
         }
     }
 }

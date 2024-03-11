@@ -5,7 +5,7 @@ import com.github.hanyaeger.api.entities.impl.TextEntity;
 import com.github.hanyaeger.api.userinput.MouseButtonPressedListener;
 import com.github.hanyaeger.api.userinput.MouseEnterListener;
 import com.github.hanyaeger.api.userinput.MouseExitListener;
-import com.github.hanyaeger.tutorial.Empty;
+import com.github.hanyaeger.tutorial.App;
 import javafx.scene.Cursor;
 import javafx.scene.input.MouseButton;
 import javafx.scene.paint.Color;
@@ -15,18 +15,18 @@ import javafx.scene.text.FontWeight;
 public class QuitButton
         extends TextEntity
         implements MouseButtonPressedListener, MouseEnterListener, MouseExitListener {
-    private Empty empty;
+    private App app;
 
-    public QuitButton(Coordinate2D initialLocation, Empty empty) {
+    public QuitButton(Coordinate2D initialLocation, App app) {
         super(initialLocation, "QUIT");
         setFill(Color.RED);
         setFont(Font.font("QUIT", FontWeight.BOLD, 30));
-        this.empty = empty;
+        this.app = app;
     }
 
     @Override
     public void onMouseButtonPressed(MouseButton mouseButton, Coordinate2D coordinate2D) {
-        empty.quit();
+        app.quit();
     }
 
     @Override

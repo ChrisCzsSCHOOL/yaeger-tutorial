@@ -11,7 +11,7 @@ will have to be animated for the Title scene, it can be a `StaticScene`.
 
 ![Edit](images/edit.png) Create a new Class called `TitleScene` that
 extends `StaticScene` in the package `com.github.hanyaeger.tutorial.scenes`.
-Implement the required methods, but leave them empty.
+Implement the required methods, but leave them app.
 
 ## Set the background image and audio
 

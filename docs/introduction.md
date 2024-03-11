@@ -1,7 +1,7 @@
 # Introduction
 
 In this tutorial you will create a simple game called Waterworld. We will start
-with an empty project. Only the assets and the project settings are provided. 
+with an app project. Only the assets and the project settings are provided. 
 You will be guided Step-by-step in the creation of a simple game, and in doing 
 so, become familiar with many of the features of Yaeger.
 
