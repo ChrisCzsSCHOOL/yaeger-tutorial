@@ -26,6 +26,7 @@ public class PlayAgainButton
 
     @Override
     public void onMouseButtonPressed(MouseButton mouseButton, Coordinate2D coordinate2D) {
+
         app.setActiveScene(1);
     }
 

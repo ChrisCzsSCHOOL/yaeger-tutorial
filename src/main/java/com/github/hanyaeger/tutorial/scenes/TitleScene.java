@@ -10,7 +10,8 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import com.github.hanyaeger.tutorial.entities.buttons.StartButton;
 
-public class TitleScene extends StaticScene {
+public class TitleScene
+        extends StaticScene {
 
     private App app;
 

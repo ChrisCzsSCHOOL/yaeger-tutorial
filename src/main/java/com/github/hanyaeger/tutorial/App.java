@@ -6,7 +6,8 @@ import com.github.hanyaeger.tutorial.scenes.GameLevel;
 import com.github.hanyaeger.tutorial.scenes.GameOver;
 import com.github.hanyaeger.tutorial.scenes.TitleScene;
 
-public class App extends YaegerGame {
+public class App
+        extends YaegerGame {
     public static void main(String[] args) {
         launch(args);
     }

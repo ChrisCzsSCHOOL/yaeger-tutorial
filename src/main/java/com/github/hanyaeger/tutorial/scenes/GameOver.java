@@ -11,7 +11,8 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 
-public class GameOver extends StaticScene {
+public class GameOver
+        extends StaticScene {
 
     private App app;
     public GameOver(App app) {
